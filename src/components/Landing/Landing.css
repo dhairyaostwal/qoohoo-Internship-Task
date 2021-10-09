@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+.Landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.Landing--Text {
+  font-size: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.Landing--imageHighlight {
+  /* back */
+  z-index: -1;
+}
+
+.Landing--Model {
+  z-index: -99;
+}
+
+.Landing--Rec {
+  transform: translate(-300px, 200px);
+}
