@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.Recommendation--Card {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  width: 15rem;
+  height: auto;
+  border: solid black;
+  border-radius: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 1% 1%;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.Recommendation--CardProductImage {
+  height: auto;
+  width: 100px;
+}
