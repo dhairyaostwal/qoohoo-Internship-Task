@@ -24,16 +24,19 @@ li a {
   display: block;
   color: black;
   text-align: center;
+  margin: 0% 3%;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+/* li a:hover:not(.active) {
   color: white;
   background-color: #111;
-}
+} */
 
 .active {
   /* background-color: #04aa6d; */
-  text-decoration: underline;
+  line-height: -5%;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid currentColor;
 }
