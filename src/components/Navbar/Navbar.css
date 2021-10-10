@@ -1,0 +1,39 @@
+ul {
+  list-style-type: none;
+  padding: 1% 1%;
+  padding-left: 10rem;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  font-weight: 600;
+  padding-right: 10%;
+}
+
+li {
+  text-transform: uppercase;
+  float: left;
+  border-right: 1px solid #bbb;
+  font-size: 1.1rem;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: white;
+  background-color: #111;
+}
+
+.active {
+  /* background-color: #04aa6d; */
+  text-decoration: underline;
+}
