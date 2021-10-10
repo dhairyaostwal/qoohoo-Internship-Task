@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Recommendation from './components/Recommendations/Recommendation';
+import Landing from './components/Landing/Landing';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Recommendation/>
+      {/* <Landing /> */}
+      <ProductDetails />
     </div>
   );
 }
