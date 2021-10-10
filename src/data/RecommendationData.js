@@ -1,6 +1,6 @@
 export const RecommendationData = [
   {
-    name: 'Puma Slippers',
+    name: 'All New Puma Slippers for Men',
     price: '50',
     url: 'https://cdn.shopify.com/s/files/1/2428/5565/products/Neemans-PebbleGrey-Recycled-Rubber-Eco-Slides-FrontLeftSideTiltLogoAir-Comfortable-Slides_700x.progressive.jpg?v=1630058449',
   },
