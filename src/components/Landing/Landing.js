@@ -7,13 +7,13 @@ import next from './../../img/next.svg';
 import Recommendation from './../Recommendations/Recommendation';
 import ProductDetails from '../ProductDetails/ProductDetails';
 
-function LandingToProduct() {
-  const [pressed, isPressed] = useState(false);
+// function LandingToProduct() {
+//   const [pressed, isPressed] = useState(false);
 
-  return !pressed ? <ProductDetails /> : null;
-}
-
-// isPressed((pressed) => !pressed);
+//   console.log('+ Button Pressed');
+//   isPressed((pressed) => !pressed);
+//   return !pressed ? <ProductDetails /> : null;
+// }
 
 export default function Landing() {
   return (
@@ -34,7 +34,7 @@ export default function Landing() {
       <button
         style={{ transform: 'translate(530px, 400px' }}
         className="Landing--Btn"
-        onClick={LandingToProduct}
+        // onClick={LandingToProduct}
       >
         +
       </button>
