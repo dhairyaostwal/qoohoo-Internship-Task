@@ -98,7 +98,11 @@ export default function ProductDetails() {
               transform="translate(80 100)"
             />
           </svg> */}
-          <img style={{ transform: 'translate(-80px,0)' }} src={blob} />
+          <img
+            itemType="image/svg+xml"
+            style={{ transform: 'translate(-80px,0)' }}
+            src={blob}
+          />
         </div>
         <img
           id="ProductDetails--ModelImage"

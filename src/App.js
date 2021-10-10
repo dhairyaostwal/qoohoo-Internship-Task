@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Landing />
-      {/* <ProductDetails /> */}
+      <ProductDetails />
     </div>
   );
 }
