@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Landing.css';
-import Model from './../../img/model.png';
+import Model3 from './../../img/model3.png';
+import Model4 from './../../img/model4.jpg';
 import Model2 from './../../img/model2.png';
+import next from './../../img/next.svg';
 import Recommendation from './../Recommendations/Recommendation';
+import ProductDetails from '../ProductDetails/ProductDetails';
+
+function LandingToProduct() {
+  const [pressed, isPressed] = useState(false);
+
+  return !pressed ? <ProductDetails /> : null;
+}
+
+// isPressed((pressed) => !pressed);
 
 export default function Landing() {
   return (
     <div
       style={{
         marginTop: '-35rem',
-        // zIndex: '-999',
       }}
     >
       <div className="Landing--bg">
@@ -22,8 +32,9 @@ export default function Landing() {
         </svg>
       </div>
       <button
-        style={{ transform: 'translate(-150px, 400px' }}
+        style={{ transform: 'translate(530px, 400px' }}
         className="Landing--Btn"
+        onClick={LandingToProduct}
       >
         +
       </button>
@@ -32,17 +43,34 @@ export default function Landing() {
           style={{ width: '30%', marginRight: '-5rem', marginLeft: '7rem' }}
           className="Landing--Text"
         >
+          <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#FF0066"
+              d="M10.6,13C-1.8,27.6,-38.1,35.2,-43.8,24.5C-49.6,13.7,-24.8,-15.5,-6.6,-19.4C11.5,-23.2,23,-1.6,10.6,13Z"
+              transform="translate(100 100)"
+            />
+          </svg>
           TIED green v-neck shirt
         </div>
 
-        <img
-          style={{ marginLeft: '-15rem' }}
-          className="Landing--Model"
-          src={Model}
-        />
+        <img className="Landing--Model" src={Model2} />
 
         <div className="Landing--Rec">
           <Recommendation />
+          <div style={{ transform: 'translate(50px ,0)', position:'relative' }}>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="#FF0066"
+                d="M10.6,13C-1.8,27.6,-38.1,35.2,-43.8,24.5C-49.6,13.7,-24.8,-15.5,-6.6,-19.4C11.5,-23.2,23,-1.6,10.6,13Z"
+                transform="translate(100 50)"
+                opacity="0.7"
+              />
+            </svg>
+          </div>
+          <img className="Landing--NextButton" src={next} />
+          <div className="Landing--AlternateModel">
+            <img className="Landing--Model" src={Model4} />
+          </div>
         </div>
       </div>
     </div>

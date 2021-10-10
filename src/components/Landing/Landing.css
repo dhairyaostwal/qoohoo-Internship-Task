@@ -8,32 +8,28 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: row;
-
 }
 
 .Landing--Text {
   font-size: 3.5rem;
   align-items: center;
   justify-content: center;
-  margin-top: 15rem;
   text-transform: uppercase;
   font-family: 'Roboto';
   font-weight: 700;
 }
 
 .Landing--imageHighlight {
-  /* back */
   z-index: -1;
 }
 
 .Landing--Model {
-  /* z-index: -99; */
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 40em;
 }
 
 .Landing--Rec {
-  transform: translate(-300px, 200px);
+  transform: translate(-50px, 150px);
 }
 
 .Landing--bg {
@@ -46,6 +42,23 @@ html {
 .Landing--Btn {
   color: white;
   background-color: black;
-  padding: 15px 15px;
+  padding: 1.5em 1.5em;
   border-radius: 50% 50%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.Landing--AlternateModel {
+  transform: translate(350px, -840px);
+}
+
+.Landing--NextButton {
+  width: 2.5em;
+  height: auto;
+  transform: translate(320px, -500px);
+  z-index: 5;
+  position: relative;
+  opacity: 60%;
 }
