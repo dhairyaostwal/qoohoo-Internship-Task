@@ -12,7 +12,8 @@
   padding: 1% 1%;
   margin-bottom: 2rem;
   text-align: left;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #f8f5f1;
+  box-shadow: rgba(16, 16, 29, 0.4) 0px 7px 29px 0px;
 }
 
 .Recommendation--CardProductImage {
