@@ -57,7 +57,9 @@ export default function Landing() {
 
         <div className="Landing--Rec">
           <Recommendation />
-          <div style={{ transform: 'translate(50px ,0)', position:'relative' }}>
+          <div
+            style={{ transform: 'translate(50px ,0)', position: 'relative' }}
+          >
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill="#FF0066"
