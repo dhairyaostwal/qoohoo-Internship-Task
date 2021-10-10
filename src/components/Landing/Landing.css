@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
+html {
+  overflow-x: hidden;
+}
+
 .Landing {
   height: 100vh;
   display: flex;
   flex-direction: row;
+
 }
 
 .Landing--Text {
@@ -22,9 +27,25 @@
 }
 
 .Landing--Model {
-  z-index: -99;
+  /* z-index: -99; */
+  width: 100%;
+  height: auto;
 }
 
 .Landing--Rec {
   transform: translate(-300px, 200px);
+}
+
+.Landing--bg {
+  position: relative;
+  transform: translate(100px, 650px);
+  z-index: -2000;
+  opacity: 80%;
+}
+
+.Landing--Btn {
+  color: white;
+  background-color: black;
+  padding: 15px 15px;
+  border-radius: 50% 50%;
 }
